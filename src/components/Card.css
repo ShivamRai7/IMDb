@@ -1,0 +1,74 @@
+html {
+    font-size: 62.5%;
+}
+
+.cards {
+    position: relative;
+    margin: 0.3rem;
+    min-width:20rem;
+    height:30rem;
+    border: 0.1rem solid rgb(239, 234, 234);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition-property: transform, z-index;
+    transition-timing-function: ease-in-out;
+    transition-duration: 300ms;
+}
+
+.cards:hover {
+    transform: scale(1.2);
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0rem 5.4rem 5.5rem, rgba(0, 0, 0, 0.12) 0rem -1.2rem 3rem, rgba(0, 0, 0, 0.12) 0rem 0.4rem 0.6rem, rgba(0, 0, 0, 0.17) 0rem 1.2rem 1.3rem, rgba(0, 0, 0, 0.09) 0rem -0.3rem 0.5rem;
+}
+
+.cardImg {
+    width: 100%;
+    height: 30rem;
+}
+
+.cardOverlay {
+    position: absolute;
+    bottom: 0rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.6rem 1.6rem 1.6rem;
+    height: 29rem;
+    width: 100%;
+    justify-content: flex-end;
+    background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+    opacity: 0;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+    transition-duration: 300ms;
+}   
+
+.cardOverlay:hover {
+    opacity: 1;
+}
+
+.cardTitle {
+    font-weight: 900;
+    font-size: 1.6rem;
+    margin-bottom: 0.7rem;
+}
+
+.cardRuntime {
+    font-size: 1.6rem;
+    margin-bottom: 0.4rem;
+}
+
+.cardRating {
+    margin-left: 1.4rem;
+    font-size: 1.6rem;
+}
+
+.fa-solid {
+    font-size: 1.6rem;
+    color: rgb(222, 212, 16);
+}
+
+.cardDescription {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+}

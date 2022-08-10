@@ -1,0 +1,97 @@
+.movie {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.movieBackground {
+    width: 80%;
+}
+
+.backdropImg {
+    width: 100%;
+    height: 50rem;
+    object-fit:cover;
+    object-position: 0 35%;
+}
+
+.movieDetail {
+    position: absolute;
+    top: 31rem;
+    display: flex;
+    justify-content: center;
+    width: 74%;
+    height: 46rem;
+}
+
+
+.moviePosterBox {
+    width: 28%;
+    margin: 0rem 0.8rem;
+}
+
+.moviePoster {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.3rem;
+    box-shadow: rgba(71, 67, 67, 0.86) 0.2rem 0..2rem 0.2rem;
+}
+
+.movieInfo {
+    width: 60%;
+    margin: 0rem 1.4rem;
+}
+
+.movieImpInfo {
+    font-size: 1.8rem;
+    text-shadow: 0rem 0rem 0.8rem #000000;
+}
+
+.movieName {
+    font-weight: 600;
+    font-size: 4.8rem;
+}
+
+.movieGenres {
+    margin: 1rem 0rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.movieGenre {
+    padding: 0.4rem 0.8rem;
+    border: 0.2rem solid white;
+    border-radius: 1rem;
+    margin-right: 1.3rem;
+}
+
+.movieSynopsis {
+    font-size: 1.8rem;
+}
+
+.synopsisHeading {
+    margin: 4rem 0rem 1rem 0rem;
+}
+
+.movieLinks {
+    margin-top: 4rem;
+    display: flex;
+}
+
+.movieLinks > a {
+    margin-top: 1rem;
+    margin-right: 4rem;
+    padding: 0.4rem 0.8rem;
+    border: 0.2rem solid white;
+    border-radius: 0.8rem;
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+
+.movieLinks>a:hover {
+    color: black;
+    background-color: white;
+}

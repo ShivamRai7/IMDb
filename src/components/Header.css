@@ -1,0 +1,87 @@
+.header {
+    margin: 0 4rem;
+    padding: 0.8rem 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+}
+
+.imdbIcon {
+    width: 8rem;
+}
+
+.fa-bars {
+    display: none;
+    cursor: pointer;
+}
+
+.searchBar {
+    width: 28rem;
+    height: 5vh;
+    font-size: 1.7rem;
+    margin: 0rem 1rem;
+    padding: 0.4rem 0.7rem;
+    border-radius: 0.7rem;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.searchBar:focus {
+    background-color: white;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+}
+
+.headerButtons {
+    margin: 0 1.4rem;
+    font-size: 2rem;
+    padding: 0.2rem 0.4rem;
+    cursor: pointer;
+    color: white;
+    border: 0.2rem solid white;
+    border-radius: 0.4rem;
+}
+
+.headerButtons:hover {
+    color: black;
+    background-color: white;
+    border: 0.2rem solid white;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width:998px) {
+    .fa-bars {
+        display: block;
+        position: fixed;
+        font-size: 2rem;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .headerRight {
+        position: fixed;
+        top: 0rem;
+        right: 10%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headerButtons {
+        margin: 2rem;
+        /* border: 0.2rem; */
+    }
+
+    #click:checked .headerButtons {
+        color: purple;
+    }
+}
